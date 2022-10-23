@@ -58,6 +58,12 @@ const NFTDropPage = (props: Props) => {
             </button>
           </header>
           <hr className="my-2 border" />
+          {address && (
+            <p className="text-center text-rose-400 text-sm sm:text-start">
+              You are logged in with wallet {address.substring(0, 5)}...
+              {address.substring(address.length - 5)}
+            </p>
+          )}
 
           <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:col-span-6 lg:space-y-0 lg:justify-center">
             <img
